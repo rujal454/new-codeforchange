@@ -1,12 +1,13 @@
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
-import Portfolio from "./components/Portfolio";
+
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import Slideshow from "./components/Slideshow";
 import LoginPage from "./components/loginc";
 import Campaign from "./components/Campaign";
+import Camp from "./components/Camp";
 function App() {
   return (
     <div>
@@ -14,7 +15,10 @@ function App() {
       <Slideshow />
       <Home />
       <Campaign />
+      <Camp />
+      <Experience />
       <Contact/>
+    
     </div>
   );
 }

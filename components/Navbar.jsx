@@ -20,7 +20,7 @@ const NavBar = () => {
     },
     {
       id: 2,
-      link: "About Us",
+      link: "About",
     },
     {
       id: 3,
@@ -28,15 +28,13 @@ const NavBar = () => {
     },
     {
       id: 4,
-      link: "Our Campaign",
+      link: "Campaign",
     },
     {
       id: 5,
       link: "contact",
     },
-    {
-     
-    },
+   
   ];
 
   return (

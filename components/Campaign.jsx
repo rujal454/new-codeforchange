@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import page from "../assets/login.jpg";
 import LoginPage from './loginc';
-import Login from './login'; // Imported Login component
+import Login from './login';
 
 const Campaign = () => {
   const [redirect, setRedirect] = useState(false);
@@ -21,7 +21,7 @@ const Campaign = () => {
     if (pageToRedirect === 'donate') {
       return <LoginPage />;
     } else if (pageToRedirect === 'collaborate') {
-      return <Login />; // Using the Login component here
+      return <Login />;
     }
   }
 

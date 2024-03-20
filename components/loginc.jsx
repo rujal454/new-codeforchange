@@ -1,5 +1,10 @@
 import React from 'react';
 import page from "../assets/login1.jpg";
+
+function redirectToDonatePage() {
+  window.location.href = '/components/donate.jsx';
+}
+
 function LoginPage() {
   return (
     <div className="flex justify-start items-center h-screen bg-gray-200" style={{ backgroundImage: `url(${page})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
@@ -27,10 +32,11 @@ function LoginPage() {
             placeholder="Password"
           />
         </div>
-        <div className="flex items-center justify-center"> {/* Centering the button */}
+        <div className="flex items-center justify-center"> 
           <button
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
             type="button"
+            onClick={redirectToDonatePage}
           >
             Login
           </button>

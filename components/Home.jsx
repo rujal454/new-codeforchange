@@ -3,7 +3,7 @@ import page from "../assets/main2.jpg";
 
 const Home = () => {
   return (
-    <div className='flex h-screen relative' style={{ backgroundImage: `url(${page})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+    <div name="About" className='flex h-screen relative' style={{ backgroundImage: `url(${page})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
       <div className='absolute inset-0 bg- ml-10 h-80 w-2/6 mt-40 border-8 border-[rgb(71,106,43)] bg-[rgb(247,255,230)]' >
         <div className='text-[rgb(71,106,43)] font-bold text-2xl font-spacing-tight mt-16 ml-8'>
      
