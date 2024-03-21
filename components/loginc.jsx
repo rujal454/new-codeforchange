@@ -1,11 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import page from "../assets/login1.jpg";
-
-function redirectToDonatePage() {
-  window.location.href = '/components/donate.jsx';
-}
+import Donate from "./donate"; // Import your Donate component
 
 function LoginPage() {
+  const [redirectToDonate, setRedirectToDonate] = useState(false); // State to control redirection
+
+  // Function to handle the button click and redirect to Donate component
+  const handleRedirectToDonate = () => {
+    setRedirectToDonate(true);
+  };
+
+  // If redirectToDonate is true, render the Donate component
+  if (redirectToDonate) {
+    return <Donate />;
+  }
+
+  // Otherwise, render the login page
   return (
     <div className="flex justify-start items-center h-screen bg-gray-200" style={{ backgroundImage: `url(${page})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
       <div className="bg-white shadow-md rounded-lg p-20  max-w-sm w-full" style={{ marginLeft: '96px' }}>
@@ -32,11 +42,11 @@ function LoginPage() {
             placeholder="Password"
           />
         </div>
-        <div className="flex items-center justify-center"> 
+        <div className="flex items-center justify-center"> {/* Centering the button */}
           <button
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
             type="button"
-            onClick={redirectToDonatePage}
+            onClick={handleRedirectToDonate} // Call handleRedirectToDonate when button is clicked
           >
             Login
           </button>

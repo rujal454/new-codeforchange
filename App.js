@@ -8,6 +8,7 @@ import Slideshow from "./components/Slideshow";
 import LoginPage from "./components/loginc";
 import Campaign from "./components/Campaign";
 import Camp from "./components/Camp";
+import DonatePage from "./components/donate";
 function App() {
   return (
     <div>

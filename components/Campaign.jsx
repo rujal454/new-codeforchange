@@ -26,7 +26,7 @@ const Campaign = () => {
   }
 
   return (
-    <div className="w-full min-h-screen flex flex-col items-center justify-center text-red"
+    <div name="Login" className="w-full min-h-screen flex flex-col items-center justify-center text-red"
       style={{ backgroundImage: `url(${page})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
       
       <div className="text-7xl font-bold text-center text-[rgb(247,255,230)]">
